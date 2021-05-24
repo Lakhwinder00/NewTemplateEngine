@@ -1,0 +1,107 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+</style>
+<div class="container-fluid" style="margin-top: 62px;" id="mainpage">
+    <div class="card-body" id="personalInformationForm" style="min-height:700px">
+        <div class="row">
+            <div class="col-lg-2" style="background-color:lavender;">
+                <div class="card bg-light text-dark">
+                    <div class="card-body">
+                        <ul class="nav nav-pills flex-column" id="navlinks">
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-10" style="background-color:lavender;">
+                <div class="card bg-light text-dark" id="rightSide">
+                    <div class="col-lg-10">  <form id="Form"></form></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/TemplateScripts/bs-jsonform.js"></script>
+    <script type="text/javascript">
+
+    </script>
+    <script type="text/javascript">
+
+        var valid = true;
+        $(document).ready(function () {
+            var fields;
+            Load();
+            function Load(status) {
+                $.ajax({
+                    type: "GET",
+                    url: '/Home/GetHtml',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+                        debugger
+                        var JsonParse = JSON.parse(data);
+                        var Target = $("#navlinks");
+                        Target.empty();
+                       
+                        $.each(JsonParse, function (item) {
+                            if (status == undefined)
+                                status = item;
+                            Target.append("<li class='nav-item'><a class='nav-link' href='#'  id='" + item + "'>" + item + "</a></li>");
+                        })
+
+                        var fields = JsonParse["" + status + ""];
+
+                        if (window.jsonForm != null) {
+                            window.jsonForm.destroy("Form")
+                        }
+
+                        try {
+                            $("#JsonForm-Form")[0].reset();
+                        } catch (e) {
+
+                        }
+                        if (valid == true) {
+                            window.jsonForm = new JsonForm();
+                            valid = false;
+                        }
+
+                        var Form1Payload = {
+                            "hide_validation": false,
+                            "button_orientation": "left",
+                            fields
+                        }
+                        window.jsonForm.create("#Form", Form1Payload, "Form")
+                        window.jsonForm.registerSubmit(Form1Handler, "Form")
+                        function Form1Handler(valid, data) {
+                            if (valid) {
+                                $("#Form2Data").text(JSON.stringify(data, null, 2))
+                            } else {
+                                $("#Form2Data").text("Form is NOT VALID. Did you fill out all fields?")
+                            }
+                        }
+
+                    },
+
+                });
+            }
+            $(document).on('click', '.nav-item', function () {
+                var NavName = $(this).children().text();
+                Load(NavName);
+            })
+        })
+    </script>
+
+}

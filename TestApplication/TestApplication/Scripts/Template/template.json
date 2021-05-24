@@ -1,0 +1,1311 @@
+{
+  "Demographic Data": [
+    {
+      "id": "readonlybasiclist",
+      "name": "Demographic Data",
+      "type": "field",
+      "field": {
+        "type": "list",
+        "helptext": "Please complete the following form in its entirety",
+        "readonly": true,
+        "required": false,
+        "font": "bold"
+      }
+    },
+    {
+      "id": "label",
+      "name": "* indicates a required filed",
+      "type": "field",
+      "field": {
+        "type": "simplelabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+
+      }
+    },
+    {
+      "id": "label",
+      "name": "indicates a pending change (click to view change)",
+      "type": "field",
+      "field": {
+        "type": "info-label",
+        "readonly": true,
+        "required": false,
+        "width": "9"
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Name:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "first",
+      "name": "First",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3"
+      }
+    },
+    {
+      "id": "middle",
+      "name": "Middle (Optional)",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3"
+      }
+    },
+    {
+      "id": "last",
+      "name": "Last",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3"
+      }
+    },
+
+    {
+      "id": "lablefield",
+      "name": "Gender:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "male",
+      "type": "field",
+      "name": "gender",
+      "field": {
+        "type": "inline-radio",
+        "width": "9",
+        "options": [ "Male", "Female", "Trans", "Other" ],
+        "default_value": "Male"
+      }
+    },
+
+    {
+      "id": "lablefield",
+      "name": "SSN:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "label",
+      "name": "XXX453453",
+      "type": "field",
+      "field": {
+        "type": "top-margin-lable",
+        "readonly": true,
+        "required": false,
+        "width": "7"
+
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "NYU ID:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "label",
+      "name": "12345678",
+      "type": "field",
+      "field": {
+        "type": "top-margin-lable",
+        "readonly": true,
+        "required": false,
+        "width": "7"
+
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Year of Graduation: *",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "select",
+      "name": "Year of Graduation: *",
+      "type": "field",
+      "field": {
+        "type": "withoutlable-select",
+        "default_value": "Top",
+        "width": "5",
+        "options": [ "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010" ]
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "1 change(s) pending",
+      "type": "field",
+      "field": {
+        "type": "info-label",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Maritial Status:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "select",
+      "name": "Maritial Status:",
+      "type": "field",
+      "field": {
+        "type": "withoutlable-select",
+        "default_value": "Top",
+        "width": "5",
+        "options": [ "Married (Domestic Partner)" ]
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "1 change(s) pending",
+      "type": "field",
+      "field": {
+        "type": "info-label",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Spouse's Domestic Partner's Name:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "first",
+      "name": "First",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3"
+      }
+    },
+    {
+      "id": "middle",
+      "name": "Middle (Optional)",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3"
+      }
+    },
+    {
+      "id": "last",
+      "name": "Last",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3"
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Is your Spouse/ Domestic Partner also an LRAP Participant?:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "8"
+      }
+    },
+    {
+      "id": "yes",
+      "name": "Yes",
+      "type": "field",
+      "field": {
+        "type": "singleradio",
+        "width": "1",
+        "default_value": "true"
+      }
+    },
+    {
+      "id": "no",
+      "name": "No",
+      "type": "field",
+      "field": {
+        "type": "singleradio",
+        "width": "1"
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Number of Dependencies:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "dependencies",
+      "type": "field",
+      "field": {
+        "type": "without-label-text",
+        "width": "4"
+      }
+    },
+    {
+      "id": "label",
+      "name": "(If you have no dependencies, enter 0)",
+      "type": "field",
+      "field": {
+        "type": "top-margin-lable",
+        "readonly": true,
+        "required": false,
+        "width": "4"
+
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Country",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "select",
+      "name": "Maritial Status:",
+      "type": "field",
+      "field": {
+        "type": "withoutlable-select",
+        "default_value": "Top",
+        "width": "4",
+        "options": [ "Bangladesh", "India", "United States" ]
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "4"
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Address:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "Address1",
+      "name": "Address 1",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "4",
+        "required": true
+      }
+    },
+    {
+      "id": "Address2",
+      "name": "Address 2 (if applicable)",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "4",
+        "required": true
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "3"
+      }
+    },
+    {
+      "id": "City ",
+      "name": "City",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3",
+        "required": true
+      }
+    },
+    {
+      "id": "Address11",
+      "name": "Address 1",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3",
+        "required": true
+      }
+    },
+    {
+      "id": "ZipPostalCode",
+      "name": "Zip/Postal Code",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3",
+        "required": true
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Country of Citizenship:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "select",
+      "name": "Maritial Status:",
+      "type": "field",
+      "field": {
+        "type": "withoutlable-select",
+        "default_value": "Top",
+        "width": "4",
+        "options": [ "Bangladesh", "India", "United States" ]
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "4"
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Email:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "Primary",
+      "name": "Primary",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "4",
+        "required": true
+      }
+    },
+    {
+      "id": "Secondary",
+      "name": "Secondary (Optional)",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "4",
+        "required": true
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "3"
+      }
+    },
+    {
+      "id": "label",
+      "name": "Please enter at least a home or mobile phone number",
+      "type": "field",
+      "field": {
+        "type": "top-margin-lable",
+        "readonly": true,
+        "required": false,
+        "width": "7"
+
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Phone:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "Home",
+      "name": "Home",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3",
+        "required": true
+      }
+    },
+    {
+      "id": "Mobile",
+      "name": "Mobile",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3",
+        "required": true
+      }
+    },
+    {
+      "id": "FaxOptional",
+      "name": "Fax (Optional)",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3",
+        "required": true
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "3"
+      }
+    },
+    {
+      "id": "label",
+      "name": "I was the recipient of the following names scholarship program during my tenure at NYU School of Law:",
+      "type": "field",
+      "field": {
+        "type": "top-margin-lable",
+        "readonly": true,
+        "required": false,
+        "width": "8"
+
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "3"
+      }
+    },
+    {
+      "id": "AnBryceScholarship",
+      "name": "AnBryceScholarship",
+      "type": "field",
+      "field": {
+        "type": "radio",
+        "width": "7",
+        "options": [ "AnBryce Scholarship", "Furman Academic Scholarship", "Furman Public Policy Scholarship", "Institute for International Law and Justice Scholarship", "Latinx Rights Scholarship", "Leadership Program in Law and Business Scholarship", "Root-Tilden-Kern Public Interest Scholarship", "Sinsheimer Service Scholarship", "None of the above" ],
+        "default_value": "AnBryce Scholarship"
+      }
+    }
+  ],
+  "Employment Information": [
+    {
+
+      "id": "readonlybasiclist",
+      "name": "Employment Information",
+      "type": "field",
+      "field": {
+        "type": "list",
+        "helptext": "Please complete the following form in its entirety. Any monetary values should be whole numbers no more than eight digits long with no dollar signs, decimals, or commas.",
+        "readonly": true,
+        "required": false,
+        "font": "bold"
+
+      }
+    },
+    {
+      "id": "label",
+      "name": "* indicates a required filed",
+      "type": "field",
+      "field": {
+        "type": "simplelabel",
+        "readonly": true,
+        "required": false,
+        "width": "3",
+        "margintop": "5"
+      }
+    },
+    {
+      "id": "label",
+      "name": "indicates a pending change (click to view change)",
+      "type": "field",
+      "field": {
+        "type": "info-label",
+        "readonly": true,
+        "required": false,
+        "width": "9"
+      }
+    },
+    {
+      "id": "label",
+      "name": "* Please choose one of the following that best describes your employment prior to this application",
+      "type": "field",
+      "field": {
+        "type": "simplelabel",
+        "readonly": true,
+        "required": false,
+        "width": "9",
+        "margintop": "5"
+
+      }
+    },
+
+    {
+      "id": "label",
+      "name": " 1 change(s) pending New value: I have been employed in an LRAP eligible position and receiving LRAP benefits since graduating from NYU School of Law",
+      "type": "field",
+      "field": {
+        "type": "info-label",
+        "readonly": true,
+        "required": false,
+        "width": "10"
+      }
+    },
+    {
+      "id": "AnBryceScholarship",
+      "name": "AnBryceScholarship",
+      "type": "field",
+      "field": {
+        "type": "radio",
+        "width": "12",
+        "options": [ "I am a first time applicant. I have been employed in an LRAP eligible position since graduating from NYU School of Law.", "I am a first time applicant. I have been employed in non-LRAP eligible employment (typically a private firm) since graduating from NYU School of Law.", "I am continuing/returning participant. I have been employed in an LRAP eligible position since graduating from NYU School of Law.", "I am continuing/returning participant. I have previously submitted the Non-LRAP Eligible Employment Form and have remained in LRAP eligible employment since my previous submission.", "I am continuing/returning participant. I am renewing my application to earn forgiveness and do not anticipate being eligible for LRAP benefits." ],
+        "default_value": "I am a first time applicant. I have been employed in an LRAP eligible position since graduating from NYU School of Law."
+      }
+    },
+    {
+      "id": "label",
+      "name": "*Will you be employed by more than one employer at the same time during teh program year?",
+      "type": "field",
+      "field": {
+        "type": "simplelabel",
+        "readonly": true,
+        "required": false,
+        "width": "10",
+        "margintop": "5"
+
+      }
+    },
+    {
+      "id": "yesno",
+      "type": "field",
+      "name": "yesno1",
+      "field": {
+        "type": "inline-radio",
+        "width": "12",
+        "options": [ "Yes", "No" ],
+        "default_value": "Yes"
+      }
+    },
+    {
+      "id": "label",
+      "name": "Multiple Employers Explanation/Comments:",
+      "type": "field",
+      "field": {
+        "type": "simplelabel",
+        "readonly": true,
+        "required": false,
+        "width": "3",
+        "margintop": "5",
+        "font": "bold"
+      }
+    },
+
+    {
+      "id": "textarea",
+      "type": "field",
+      "field": {
+        "type": "without-label-textarea",
+        "width": "8"
+      }
+    },
+    {
+      "id": "label",
+      "name": "*Do you anticipate receiving any assistance in the repayment of educational loans from an organization other than NYU? (Please note: if yes, you will be asked to provide additional documentation describing these benefits)",
+      "type": "field",
+      "field": {
+        "type": "simplelabel",
+        "readonly": true,
+        "required": false,
+        "width": "12",
+        "margintop": "5"
+
+      }
+    },
+    {
+      "id": "label",
+      "name": "Source of assistance (Name of Organization):",
+      "type": "field",
+      "field": {
+        "type": "simplelabel",
+        "readonly": true,
+        "required": false,
+        "width": "3",
+        "margintop": "5",
+        "font": "bold"
+      }
+    },
+
+    {
+      "id": "nameorg",
+      "type": "field",
+      "field": {
+        "type": "without-label-textarea",
+        "width": "8"
+      }
+    },
+    {
+      "id": "label",
+      "name": "*Type of assistance",
+      "type": "field",
+      "field": {
+        "type": "simplelabel",
+        "readonly": true,
+        "required": false,
+        "width": "9",
+        "margintop": "5",
+        "font": "bold"
+      }
+    },
+    {
+      "id": "male",
+      "type": "field",
+      "name": "gender",
+      "field": {
+        "type": "inline-radio",
+        "width": "12",
+        "options": [ "Employer", "State", "Federal", "Non-Profit", "Other" ],
+        "default_value": "Employer"
+      }
+    },
+    {
+      "id": "AnnualSalary",
+      "name": "Anticipated amount of assistance:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "how-paid",
+      "type": "field",
+      "field": {
+        "type": "text-number",
+        "width": "8",
+        "default_value": "0.00"
+      }
+    },
+    {
+      "id": "label",
+      "name": "Comments or Additional Information:",
+      "type": "field",
+      "field": {
+        "type": "simplelabel",
+        "readonly": true,
+        "required": false,
+        "width": "3",
+        "margintop": "5",
+        "font": "bold"
+      }
+    },
+
+    {
+      "id": "textarea",
+      "type": "field",
+      "field": {
+        "type": "without-label-textarea",
+        "width": "8"
+      }
+    },
+    {
+      "id": "label",
+      "name": "Do you anticipate any additional income from employment not listed on this application?",
+      "type": "field",
+      "field": {
+        "type": "simplelabel",
+        "readonly": true,
+        "required": false,
+        "width": "10",
+        "margintop": "5"
+
+      }
+    },
+    {
+      "id": "yesno",
+      "type": "field",
+      "name": "yesno2",
+      "field": {
+        "type": "inline-radio",
+        "width": "12",
+        "options": [ "Yes", "No" ],
+        "default_value": "Yes"
+      }
+    },
+    {
+      "id": "label",
+      "name": "Comments or Additional Information:",
+      "type": "field",
+      "field": {
+        "type": "simplelabel",
+        "readonly": true,
+        "required": false,
+        "width": "3",
+        "margintop": "5",
+        "font": "bold"
+      }
+    },
+
+    {
+      "id": "textarea",
+      "type": "field",
+      "field": {
+        "type": "without-label-textarea",
+        "width": "8"
+      }
+    }
+  ],
+  "Employer Form": [
+    {
+
+      "id": "readonlybasiclist",
+      "name": "Employer Form",
+      "type": "field",
+      "field": {
+        "type": "list",
+        "helptext": "indicates a required filed",
+        "readonly": true,
+        "required": false,
+        "font": "bold"
+
+      }
+    },
+    {
+      "id": "EmployerID",
+      "name": "Employer ID:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "empid",
+      "type": "field",
+      "field": {
+        "type": "without-label-text",
+        "width": "5"
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "4"
+      }
+    },
+    {
+      "id": "EmployerName",
+      "name": "Employer's Name:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "Name1",
+      "name": "Name 1 ",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "4"
+      }
+    },
+    {
+      "id": "Name2",
+      "name": "Name 2 ex: (department/divisions/jurisdiction/project)",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "5"
+      }
+    },
+    {
+      "id": "TitlePosition",
+      "name": "Title/Position:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "titlepo",
+      "type": "field",
+      "field": {
+        "type": "without-label-text",
+        "width": "4"
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "4"
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Country",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "select",
+      "name": "Maritial Status:",
+      "type": "field",
+      "field": {
+        "type": "withoutlable-select",
+        "default_value": "Top",
+        "width": "4",
+        "options": [ "Bangladesh", "India", "United States" ]
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "4"
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Address:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "Address1",
+      "name": "Address 1",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "4",
+        "required": true
+      }
+    },
+    {
+      "id": "Address2",
+      "name": "Address 2 (if applicable)",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "4",
+        "required": true
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "3"
+      }
+    },
+    {
+      "id": "City ",
+      "name": "City",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3",
+        "required": true
+      }
+    },
+    {
+      "id": "Address11",
+      "name": "Address 1",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3",
+        "required": true
+      }
+    },
+    {
+      "id": "ZipPostalCode",
+      "name": "Zip/Postal Code",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "3",
+        "required": true
+      }
+    },
+    {
+      "id": "lablefield",
+      "name": "Phone:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "Primary",
+      "name": "Primary",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "4",
+        "required": true
+      }
+    },
+    {
+      "id": "Fax",
+      "name": "Fax (Optional)",
+      "type": "field",
+      "field": {
+        "type": "text",
+        "width": "4",
+        "required": true
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "1"
+      }
+    },
+    {
+      "id": "EmployerType",
+      "name": "Employer Type:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "select",
+      "type": "field",
+      "field": {
+        "type": "withoutlable-select",
+        "default_value": "Top",
+        "width": "4",
+        "options": [ "Type 1", "Type 2", "Type 3" ]
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "4"
+      }
+    },
+    {
+      "id": "EmployerTAX",
+      "name": "Employer Tax Identification Number:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "Employer-text",
+      "type": "field",
+      "field": {
+        "type": "without-label-text",
+        "width": "4"
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "4"
+      }
+    },
+    {
+      "id": "Employer-startdate",
+      "name": "Employment Start Date:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "Employer-start",
+      "type": "field",
+      "field": {
+        "type": "without-label-text",
+        "width": "4"
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "4"
+      }
+    },
+    {
+      "id": "Employerhour",
+      "name": "Employment Hours Per Week:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "Employer-hour-start",
+      "type": "field",
+      "field": {
+        "type": "without-label-text",
+        "width": "4"
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "4"
+      }
+    },
+    {
+      "id": "Employerpaid",
+      "name": "How Often Are You Paid:",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "how-paid",
+      "type": "field",
+      "field": {
+        "type": "withoutlable-select",
+        "default_value": "Top",
+        "width": "4",
+        "options": [ "Monthly", "Half-Yearly", "Yearly" ]
+      }
+    },
+    {
+      "id": "empty",
+      "type": "field",
+      "field": {
+        "type": "offset-col",
+        "width": "4"
+      }
+    },
+    {
+      "id": "AnnualSalary",
+      "name": "Annual Gross Salary (2021):",
+      "type": "field",
+      "field": {
+        "type": "Offsetlabel",
+        "readonly": true,
+        "required": false,
+        "width": "3"
+      }
+    },
+    {
+      "id": "how-paid",
+      "type": "field",
+      "field": {
+        "type": "text-number",
+        "width": "4",
+        "default_value": "0.00"
+      }
+    }
+  ],
+  "Employees Grid": [
+
+    {
+
+      "id": "readonlybasiclist",
+      "name": "Employer Grid",
+      "type": "field",
+      "field": {
+        "type": "list",
+        "helptext": "Click on the 'Add EMployer' button to submit information about your current employer.",
+        "readonly": true,
+        "required": false,
+        "font": "bold",
+        "width": "9"
+      }
+
+    },
+    {
+      "id": "Info",
+      "name": "indicates a pending change (click to view change)",
+      "type": "field",
+      "field": {
+        "type": "info-label",
+        "readonly": true,
+        "required": false,
+        "width": "4"
+      }
+    },
+    {
+      "id": "label",
+      "name": "* indicates a new employer pending change",
+      "type": "field",
+      "field": {
+        "type": "simplelabel",
+        "readonly": true,
+        "required": false,
+        "width": "4"
+
+      }
+    },
+    {
+      "id": "label",
+      "name": "X  indicates an employer deletion pending chnage",
+      "type": "field",
+      "field": {
+        "type": "simplelabel",
+        "readonly": true,
+        "required": false,
+        "width": "4"
+
+      }
+    },
+    {
+      "id": "Info-table",
+      "name": "indicates a pending change (click to view change)",
+      "type": "field",
+      "field": {
+        "type": "table",
+        "headers": [ "", "Employer's Name", "Employer Type", "Employer Tax ID", "Employment Start Date", "Employment Hours Per Week", "How Often You are Paid", "Annual Gross Salary (2021)" ],
+        "tablerows": [
+          {
+            "row": [ "<input type='checkbox' class='checkbox'/>", "Kristof Reggers", "Clark", "24324242", "2019-05-25", "35", "Monthly", "48000" ]
+          },
+          {
+            "row": [ "<input type='checkbox' class='checkbox'/>", "Kristof Reggers", "Clark", "24324242", "2019-05-25", "35", "Monthly", "48000" ]
+          },
+          {
+            "row": [ "<input type='checkbox' class='checkbox'/>", "Kristof Reggers", "Clark", "24324242", "2019-05-25", "35", "Monthly", "48000" ]
+          }
+
+        ],
+        "width": "12"
+      }
+    }
+  ]
+}

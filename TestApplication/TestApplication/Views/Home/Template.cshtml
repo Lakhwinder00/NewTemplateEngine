@@ -1,0 +1,224 @@
+﻿
+@{
+    ViewBag.Title = "Template";
+}
+<div class="container-fluid" style="margin-top:30px">
+    <div class="row">
+        <div class="col-lg-2" style="background-color:lavender;">
+            <div class="card bg-light text-dark">
+                <div class="card-body">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="personalLink">Personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="contactLink">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="educationLink">Education</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-10" style="background-color:lavender;">
+            <div class="card bg-light text-dark" id="rightSide">
+                <div class="card-body" id="personalInformationForm" style="min-height:700px">
+                    <h2>Personal Information Form</h2>
+
+                    <hr>
+                    <p>Some quick information about yourself:</p>
+                    <form class="was-validated">
+                        <div class='row'>
+                            <div class='col'>
+                                <div class='form-group'>
+                                    <label for='fName'>First Name:</label>
+                                    <input type='text' class='form-control' id='fName' placeholder='Enter First Name' name='fName' required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+                                <div class='form-group'>
+                                    <label for='dob'>Birth Date:</label>
+                                    <input type='date' class='form-control' id='dob' placeholder='Enter Birthdate' name='dob' required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+                                Check All That Apply:
+                                <div class='form-check'>
+                                    <label class='form-check-label'>
+                                        <input type='checkbox' class='form-check-input' value=''>Option 1
+                                    </label>
+                                </div>
+                                <div class='form-check'>
+                                    <label class='form-check-label'>
+                                        <input type='checkbox' class='form-check-input' value=''>Option 2
+                                    </label>
+                                </div>
+                                <div class='form-check'>
+                                    <label class='form-check-label'>
+                                        <input type='checkbox' class='form-check-input' value=''>Option 3
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class='col'>
+                                <div class='form-group'>
+                                    <label for='lName'>Last Name:</label>
+                                    <input type='text' class='form-control' id='lName' placeholder='Enter Last Name' name='lName' required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+                                <div class='form-group'>
+                                    <label for='sex'>Sex:</label>
+                                    <select class="form-control" id="selectSex" name="selectSex">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+
+                                Select One:
+                                <div class='form-check'>
+                                    <label class='form-check-label'>
+                                        <input type='radio' class='form-check-input' name='optradio'>Option 1
+                                    </label>
+                                </div>
+                                <div class='form-check'>
+                                    <label class='form-check-label'>
+                                        <input type='radio' class='form-check-input' name='optradio'>Option 2
+                                    </label>
+                                </div>
+                                <div class='form-check'>
+                                    <label class='form-check-label'>
+                                        <input type='radio' class='form-check-input' name='optradio'>Option 3
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='row'>
+                            <div class='col'>
+                                <div class='form-group'>
+                                    <label for='notes'>Notes:</label>
+                                    <textarea class='form-control' rows='5' id='notes'></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+
+
+                <!----Contact-->
+
+                <div class="card-body" id="contactInformationForm" style="min-height:700px">
+                    <h2>Contact Information Form</h2>
+
+                    <hr>
+                    <p>Some quick contact information:</p>
+                    <form class="was-validated">
+                        <div class='row'>
+                            <div class='col'>
+                                <div class='form-group'>
+                                    <label for='address'>Address:</label>
+                                    <input type='text' class='form-control' id='address' placeholder='Enter Your Street Address' name='address' required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+                                <div class='form-group'>
+                                    <label for='city'>City:</label>
+                                    <input type='text' class='form-control' id='city' placeholder='Enter Your City' name='city' required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+                                <div class='form-group'>
+                                    <label for='state'>State:</label>
+                                    <input type='text' class='form-control' id='state' placeholder='Enter Your State' name='state' required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+
+                            </div>
+
+                            <div class='col'>
+
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <!----Education-->
+
+                <div class="card-body" id="educationInformationForm" style="min-height:700px">
+                    <h2>Education Information Form</h2>
+
+                    <hr>
+                    <p>Some quick education information history:</p>
+                    <form class="was-validated">
+                        <div class='row'>
+                            <div class='col'>
+
+                            </div>
+                            <div class='col'>
+                                <div class='form-group'>
+                                    <label for='highSchoolName'>High School Name:</label>
+                                    <input type='text' class='form-control' id='highSchoolName' placeholder='Enter Highschool Attended' name='highSchoolName' required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+                                <div class='form-group'>
+                                    <label for='universityName'>University Name:</label>
+                                    <input type='text' class='form-control' id='universityName' placeholder='Enter University Attended' name='universityName'>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            debugger
+            $("#contactInformationForm").hide();
+            $("#educationInformationForm").hide();
+            $("#personalInformationForm").show();
+
+            $("#personalLink").click(function () {
+                $("#contactInformationForm").hide();
+                $("#educationInformationForm").hide();
+                $("#personalInformationForm").show();
+            });
+
+            $("#contactLink").click(function () {
+                $("#contactInformationForm").show();
+                $("#educationInformationForm").hide();
+                $("#personalInformationForm").hide();
+            });
+
+            $("#educationLink").click(function () {
+                $("#contactInformationForm").hide();
+                $("#educationInformationForm").show();
+                $("#personalInformationForm").hide();
+            });
+        });
+    </script>
+}
