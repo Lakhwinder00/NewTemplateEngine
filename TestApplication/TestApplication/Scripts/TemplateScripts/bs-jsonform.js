@@ -569,9 +569,11 @@ class JsonForm {
                     }
                     template += `
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="`+ id + index + `" name="` + id + `" value="` + item + `" class="custom-control-input" ` + isSelected + `>
-                        <label class="custom-control-label" for="`+ id + index + `">` + json.field.optionsvalues[index] + `</label>
-                    </div>`
+                        <label class="radio radio-site" for="`+ id + index + `">
+  <input type="radio"   id="`+ id + index + `" name="` + id + `" ` + isSelected + `><span class="mr-2"></span>
+  ` + json.field.optionsvalues[index] + `</label>
+</div>
+`
                 })
 
                 template += "</div></div>"
@@ -584,9 +586,10 @@ class JsonForm {
                     if (json.field.default_value == item) {
                         isSelected = "checked"
                     }
-                    template += `<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" class="custom-control-input" id="`+ id + index + `" name="` + id + `" ` + isSelected + `>
-  <label class="custom-control-label" for="`+ id + index + `">` + json.field.optionsvalues[index] + `</label>
+                    template += `<div class="custom-control-inline col-md-1 col-sm-5 hd-mt-2">
+<label class="radio radio-site" for="`+ id + index + `">
+  <input type="radio"   id="`+ id + index + `" name="` + id + `" ` + isSelected + `><span class="mr-2"></span>
+  ` + json.field.optionsvalues[index] + `</label>
 </div>
 `
                 })
@@ -602,8 +605,9 @@ class JsonForm {
                 template = `
                 <div class="col-`+ json.field.width + `">
                     <div class="custom-control custom-radio `+ spacer_class + `">
-                        <input type="radio" name="gender" class="custom-control-input" id="`+ id + `" ` + isChecked + `>
-                        <label class="custom-control-label" for="`+ id + `">` + json.name + `</label>
+  <label class="radio radio-site" for="`+ id + `">
+                        <input type="radio" name="gender"  id="`+ id + `" ` + isChecked + `><span class="mr-2"></span>
+                      ` + json.name + `</label>
                     </div>
                 </div>
                 `
@@ -686,7 +690,7 @@ class JsonForm {
             case "Offsetlabel":
                 template = `<div class="col-` + json.field.width + `" style="text-align: right;">
                <div class="form-group `+ spacer_class + `">
-                <lable style='font-weight:500 !important'>` + json.name + `</lable>
+                <lable style='font-weight:bold'>` + json.name + `<span class="hd-required" style="display:` + json.field.display + `">*</span></lable>
                 </div>
                 </div>           
                 `
@@ -694,14 +698,14 @@ class JsonForm {
             // Simple lable
             case "simplelabel":
                 template = `<div class="col-` + json.field.width + `"  style="margin-top:` + json.field.margintop + `px;font-weight:` + json.field.font + `">
-                <lable>` + json.name + `</lable>
+                <lable><span class="hd-required" style="display:` + json.field.display + `">*</span> ` + json.name + `</lable>
                 </div>           
                 `
                 break
             // Top margin lable
             case "top-margin-lable":
                 template = `<div class="col-` + json.field.width + `" style="margin-top: 15px;">
-                <lable>` + json.name + `</lable>
+                <lable><span class="hd-required" style="display:` + json.field.display + `">*</span> ` + json.name + `</lable>
                 </div>           
                 `
                 break
@@ -786,12 +790,12 @@ class JsonForm {
             // Otherwise do a normal input
             default:
                 var label = ''
-                if (enable_label) { label = `<label for="` + id + `">` + json.name + `</label>` }
+                if (enable_label) { label = `<label for="` + id + `">` + json.name + `  <span class="hd-required" style="display:` + json.field.display + `">*</span></label>` }
 
                 template = `
                 <div class="col-`+ json.field.width + `">
                 <div class="form-group `+ spacer_class + `">
-                    `+ label + `
+                    `+ label + `     
                     <input type="`+ json.field.type + `" class="form-control ` + sizeClass + `" id="` + id + `" placeholder="` + json.field.placeholder + `" value="` + json.field.default_value + `">
                 </div>
                 </div>
@@ -948,7 +952,7 @@ class JsonForm {
                 var width = 10
                 // Create DOM
                 var template = `
-                    <p class="mt-3 mb-2" style="font-weight:`+ fieldInstance.field.font + `">` + fieldInstance.name + `</p>
+                    <p class="`+ fieldInstance.field.class + `" style="font-weight:`+ fieldInstance.field.font + `">` + fieldInstance.name + `</p>
                     <div class="row" id="`+ id + `-Row"></div>
                 `
                 $("#" + id).html(template)
